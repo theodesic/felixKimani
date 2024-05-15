@@ -123,7 +123,7 @@ hr{
     background-size: cover;
     background-position: center;
 }
-/* .form{
+ .form{
     background-color: #fff;
     max-width: 430px;
     border-radius: 6px;
@@ -252,7 +252,7 @@ a.google{
 .forms .form-b{
     display: none;
 }
- */
+ 
 
 /*input{
     margin: 20px;
@@ -270,10 +270,10 @@ input:hover{
     padding: 8px;
 }*/
 
-.close{
+#close{
     position: absolute;
-    top: -15px;
-    right: -15px;
+    top: -10px;
+    right: 5px;
     background: #333;
     color: #fff;
     height: 20px;
@@ -383,11 +383,20 @@ nav ul li:hover ul.dropdown{
 .wrapper{
     padding: 10px 10px;
   }
+   @media(max-width:768px){
+    .box-area{
+        overflow-y: scroll;
+    }
+  } 
 
   #card-area{
     padding: 50px 0;
-
   }
+   @media(max-width:768px){
+    .box-area{
+        overflow-y: scroll;
+    }
+  } 
 
   .box-area{
     display: grid;
@@ -395,12 +404,26 @@ nav ul li:hover ul.dropdown{
     grid-gap: 40px;
     margin-top: 50px;
   }
+   @media(max-width:768px){
+    .box-area{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    }
+  } 
   .box{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5 );
   }
+   @media(max-width:768px){
+    .box{
+        position: relative;
+        overflow: scroll;
+        margin-bottom: 30px;
+    }
+  } 
 
   .box img{
     width: 100%;
@@ -916,7 +939,6 @@ strong{
     background:  rgba(11, 100, 85, 0.3);
     justify-content: center;
     align-items: center;
-    margin-top: 6%;
 
 }
 .popup-b .popup-content{
@@ -928,6 +950,14 @@ strong{
 }
 .popup-b .popup-content #close{
     margin-top: 3%;
+}
+.aside p{
+    font-family: "Jacquard 24 Charted";
+    text-shadow: 0px 0px 8px blueviolet,
+                0px 0px 12px whitesmoke,
+                0px 0px 16px red;
+    text-align: center;
+    animation: myAnim 4s ease  2 normal forwards;
 }
 .reply-text{
     font-family: "Jacquard 24 Charted";
@@ -1048,6 +1078,9 @@ strong{
 @media (max-width:500px){
     .sec-container p{
         font-size: 16px;
+    }
+    .sec-container{
+        margin: auto;
     }
 }
 
