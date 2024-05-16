@@ -48,7 +48,7 @@ hr{
 .carthelp{
     position: absolute;
     right: 50px;
-    top: 8%;
+    top: 9%;
 }
 .carthelp a{
     text-decoration: none;
@@ -73,7 +73,14 @@ hr{
     background:rgba(0, 0, 0, 0.3);
 }
 
-
+.alttext{
+    position: absolute;
+    top: 35%;
+    font-family: "Poetsen One";
+    text-shadow: 0px 0px 8px whitesmoke,
+                0px 0px 12px whitesmoke,
+                0px 0px 16px whitesmoke
+}
 
 .popup{
     background: rgba(0,0,0,0.6);
