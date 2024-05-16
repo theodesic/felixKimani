@@ -360,12 +360,6 @@ nav ul li:hover ul.dropdown{
 .wrapper{
     padding: 10px 10px;
   }
-   @media(max-width:768px){
-    .box-area{
-        overflow-y: scroll;
-    }
-  } 
-
   #card-area{
     padding: 50px 0;
   }
@@ -1097,8 +1091,6 @@ strong{
         border-radius: 20%;
         font-size: 15px;
     }
-    
-    
 }
 
 @media (max-width:768px) {
@@ -1140,7 +1132,6 @@ strong{
     }
     .box-area{
         display: block;
-        overflow-y: scroll;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
