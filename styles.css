@@ -54,8 +54,7 @@ hr{
 }*/
 
 #button{
-    padding: 5px 10px;
-    padding-right: 15px;
+    padding: 5px 15px;
     color: black;
     font-size: 18px;
     border-radius: 20px;
@@ -64,17 +63,36 @@ hr{
     position: absolute;
     top: 40px;
     right: 100px ;
+    height: 1px;
+    
+}
+#snp:hover{
+    height: 35px;
+    background: black;
+    color: whitesmoke;
+    -webkit-box-shadow: 4px 5px 5px 0px rgba(103,114,168,1);
+-moz-box-shadow: 4px 5px 5px 0px rgba(103,114,168,1);
+box-shadow: 4px 5px 5px 0px rgba(103,114,168,1)
+}
+#button:hover{
+    background: black;
+    color: whitesmoke;
+    height: 35px;
+    -webkit-box-shadow: 4px 5px 5px 0px rgba(103,114,168,1);
+-moz-box-shadow: 4px 5px 5px 0px rgba(103,114,168,1);
+box-shadow: 4px 5px 5px 0px rgba(103,114,168,1)
 }
 
 #snp{
+    height: 1px;
     color: black;
     font-size: 18px;
     transition: 0.5s;
     position: absolute;
-    padding: 0 10px;
-    border-radius: 10px;
-    top: 45px;
-    right: 45px ;
+    padding: 5px 10px;
+    border-radius: 20px;
+    top: 65px;
+    right: 60px ;
 }
 .button:hover{
     background: black;
@@ -122,6 +140,9 @@ hr{
     align-items: center;
     justify-content: center;
     column-gap: 30px;
+}
+.container a{
+    text-decoration: none;
 }
 
 .main1-a{
@@ -699,7 +720,15 @@ nav ul li:hover ul.dropdown{
 .gallery-item-holder .gallery-item{
     padding: 10px;
     position: relative;
-
+}
+.gallery-item .p2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    text-shadow: 0px 0px 8px whitesmoke,
+                0px 0px 12px whitesmoke,
+                0px 0px 16px whitesmoke;
+    
 }
 .gallery-item-holder .gallery-item{
     width: 250px;
@@ -803,7 +832,7 @@ nav ul li:hover ul.dropdown{
     position: relative;
 }
 .main2 #back{
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     padding: 5px 10px;
@@ -824,7 +853,7 @@ nav ul li:hover ul.dropdown{
     position: relative;
 }
 .main3 #back-a{
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     padding: 5px 10px;
@@ -846,7 +875,7 @@ nav ul li:hover ul.dropdown{
     position: relative;
 }
 .main4 #back-b{
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     padding: 5px 10px;
