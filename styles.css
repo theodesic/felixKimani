@@ -1147,6 +1147,17 @@ strong{
     .sec-container{
         margin: auto;
     }
+    .gallery-item-holder .gallery-item{
+        width: 200px;
+        height: 200px;
+    }
+    .gallery-item-holder{
+        margin-left: 15%;
+    }
+    .gallery-item .p2 p{
+        border-radius: 20%;
+        font-size: 15px;
+    }
 }
 
 @media (max-width:768px) {
@@ -1171,9 +1182,9 @@ strong{
         display: block;
         height: 100vh;
     }
-    .slider-wrapper{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    .slider-wrapper .img-list .img-item{
+        width: 150px;
+        height: 200px;
     }
     #sp{
         display: none;
