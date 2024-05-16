@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
+.error{
+    color: red;
+    z-index: 3;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+}
 
 hr{
     margin-top: 20px;
@@ -567,12 +574,12 @@ nav ul li:hover ul.dropdown{
 
 
 .product-display{
+    background: rgba(223, 255, 255, 0.5 );
+
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 30px;
-    margin-top: 3%;
-    margin-bottom:5% ;
-    margin-left: 10%;
+    
 
 }
 .image-item{
@@ -581,6 +588,9 @@ nav ul li:hover ul.dropdown{
 }
 .image-container{
     width: 250px;
+    margin-top: 3%;
+    margin-bottom:5% ;
+    margin-left: 10%;
 }
 .image-container p{
     position: absolute;
@@ -594,11 +604,27 @@ nav ul li:hover ul.dropdown{
     0px 0px 16px whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+.p2{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 30%;
+    left: 10%;
+    opacity: 0;
+    transition: 1s linear;
+}
+.p2 p{
+    padding: 0 10px ;
+    background: orange;
+    font-family: "inter";
+}
 .image:hover p{
     border-radius: 5px;
     top: 5%;
     transition: 1s linear;
- 
+}
+.image:hover .p2{
+    opacity: 1;
 }
 .image:hover{
     cursor: pointer;
@@ -679,7 +705,18 @@ nav ul li:hover ul.dropdown{
     width: 250px;
     height: 250px;
     position: relative;
-
+}
+.gallery-item .p2 p{
+    border-radius: 20%;
+    font-size: 18px;
+}
+.gallery-item:hover{
+    transform: scale(1.1);
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+.gallery-item:hover .p2{
+    opacity: 1;
 }
 .gallery-item img{
     width: 100%;
@@ -734,7 +771,6 @@ nav ul li:hover ul.dropdown{
 .related-products{
     margin-top: 5%;
     margin-bottom: 15%;
-    background-color: #333;
     display: grid;
     gap: 100px;
     grid-template-columns: repeat(10, 1fr);
