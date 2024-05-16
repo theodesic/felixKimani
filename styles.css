@@ -388,7 +388,6 @@ nav ul li:hover ul.dropdown{
   }
    @media(max-width:768px){
     .box{
-        position: relative;
         margin-bottom: 30px;
     }
   } 
