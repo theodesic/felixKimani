@@ -45,6 +45,33 @@ hr{
     font-family: "Briem Hand";
 
 }
+.carthelp{
+    position: absolute;
+    right: 50px;
+    top: 5%;
+}
+.carthelp a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "inter";
+    color: black;
+}
+#button{
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s linear;
+}
+#snp{
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s linear;
+}
+#button:hover {
+    background:rgba(0, 0, 0, 0.3);
+}
+#snp:hover{
+    background:rgba(0, 0, 0, 0.3);
+}
 /*.stick{
     position: fixed;
     z-index: 3;
@@ -53,7 +80,7 @@ hr{
     padding: 0 10px;
 }*/
 
-#button{
+/* #button{
     padding: 5px 15px;
     color: black;
     font-size: 18px;
@@ -109,7 +136,7 @@ box-shadow: 4px 5px 5px 0px rgba(103,114,168,1)
     border-radius: 5px;
     transition: 0.5s;
     box-shadow: 6px 10px 12px -5px black;
-}
+} */
 
 
 .popup{
@@ -132,14 +159,14 @@ box-shadow: 4px 5px 5px 0px rgba(103,114,168,1)
     position: relative;
 }
 
-/*pop up 2*/
-.container{
-    height: 100%;
+.carthelp{
+    display: inline;
+    /* height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 30px;
+    column-gap: 30px; */
 }
 .container a{
     text-decoration: none;
@@ -280,24 +307,6 @@ a.google{
 .forms .form-b{
     display: none;
 }
- 
-
-/*input{
-    margin: 20px;
-    display: block;
-    width: 50%;
-    padding: 8px;
-    border-style: dotted;
-}
-input:hover{
-    background: bisque;
-    color: black;
-    transition: 0.5s linear;
-}
-.input-holder{
-    padding: 8px;
-}*/
-
 #close{
     position: absolute;
     top: -10px;
@@ -320,9 +329,6 @@ input:hover{
     align-items: center;
     font-size: 17px;
 }
-/*.search:hover input{
-    width: 150px;
-}*/
 
 .search input{
     width: 100px;
@@ -1158,10 +1164,17 @@ strong{
         border-radius: 20%;
         font-size: 15px;
     }
+    
+    
 }
 
 @media (max-width:768px) {
     
+    .nav-holder{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+    }
     .main1-a{
         width: 100%;
     }
@@ -1215,6 +1228,9 @@ strong{
     }
 }
 @media (max-width:1024px){
+    .sec-container{
+        display: block;
+    }
     .main1-a{
         width: 100%;
     }
