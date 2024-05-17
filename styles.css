@@ -1062,6 +1062,34 @@ strong{
 	}
 }
 
+.alttext h1{
+    color: whitesmoke;
+    font-weight: 900;
+    z-index: 2;
+    overflow: hidden;
+    text-shadow: 0px 0px 8px blueviolet,
+                0px 0px 12px red,
+                0px 0px 16px red;
+}
+.alttext h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    animation: animate 9s linear forwards;
+
+}
+@keyframes animate{
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: -20%;
+    }
+}
+
 .navbar{
     margin: auto;
     position: absolute;
@@ -1070,7 +1098,7 @@ strong{
 
 .navbar-toggler{
     position: absolute;
-    right: 0;
+    right: 30px;
 }
 
 @media (max-width:500px){
@@ -1084,14 +1112,7 @@ strong{
         overflow: scroll;
         height: 100vh;
     }
-    .overlay h3{
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-    }
-    .overlay a{
-        display: none;
-    }
+    
     .sec-container p{
         font-size: 16px;
     }
@@ -1163,7 +1184,7 @@ strong{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .box-area h3{
-        font-size: 15px;
+        font-size: 19px;
     }
     .box-area a{
         font-size: 11px;
