@@ -1066,29 +1066,13 @@ strong{
     color: whitesmoke;
     font-weight: 900;
     z-index: 2;
-    overflow: hidden;
     text-shadow: 0px 0px 8px blueviolet,
                 0px 0px 12px red,
                 0px 0px 16px red;
-}
-.alttext h1::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 120%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
-    animation: animate 10s linear forwards;
 
 }
-@keyframes animate{
-    100%{
-        left: 120%;
-    }
-    0%{
-        right: -20%;
-    }
-}
+
+
 
 .navbar{
     margin: auto;
