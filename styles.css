@@ -1065,7 +1065,7 @@ strong{
 .navbar{
     margin: auto;
     position: absolute;
-    left: 20px;
+    left: 50px;
 }
 
 .navbar-toggler{
@@ -1074,6 +1074,24 @@ strong{
 }
 
 @media (max-width:500px){
+    .main3,
+    .main4,
+    .main2{
+        height: 100vh;
+        overflow: scroll;
+    }
+    .carthelp #snp{
+        overflow: scroll;
+        height: 100vh;
+    }
+    .overlay h3{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    .overlay a{
+        display: none;
+    }
     .sec-container p{
         font-size: 16px;
     }
@@ -1094,7 +1112,16 @@ strong{
 }
 
 @media (max-width:768px) {
-    
+    .main3,
+    .main4,
+    .main2{
+        height: 100vh;
+        overflow: scroll;
+    }
+    .carthelp #snp{
+        overflow: scroll;
+        height: 100vh;
+    }
     .nav-holder{
         position: absolute;
         top: 3%;
