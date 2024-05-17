@@ -1077,16 +1077,16 @@ strong{
     left: 0;
     width: 120%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
-    animation: animate 9s linear forwards;
+    background-color: rgba(0,0,0,0.9);
+    animation: animate 10s linear forwards;
 
 }
 @keyframes animate{
-    0%{
-        left: 110%;
-    }
     100%{
-        left: -20%;
+        left: 120%;
+    }
+    0%{
+        right: -20%;
     }
 }
 
