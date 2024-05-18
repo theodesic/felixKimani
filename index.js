@@ -1,3 +1,19 @@
+//  window.addEventListener("scroll", function(){
+//   let navholder = document.querySelector("navholder");
+//   navholder.classList.toggle("sticky", window.scrollY > 0);
+//  }) 
+  // document.addEventListener("scroll", () => {
+  //   const navholder = document.querySelector("navholder");
+
+
+  //   if (window.scrollY > 0) {
+  //     navholder.classList.add("scrolled");
+
+  //   } else {
+  //     navholder.classList.remove("scrolled");
+  //   }
+  // })
+  
   //login
 document.getElementById("button").addEventListener("click", function(){
     document.querySelector(".popup-a").style.display = "flex";
