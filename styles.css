@@ -104,7 +104,8 @@ hr{
 
 .carthelp{
     position: absolute;
-    top: 5%;
+    top: 6%;
+    right: 0;
     display: inline;
     /* height: 100%;
     width: 100%;
@@ -551,6 +552,7 @@ hr{
     margin-bottom:5% ;
     margin-left: 10%;
 }
+
 .image-container p{
     position: absolute;
     color: black;
@@ -594,9 +596,41 @@ hr{
     border-radius: 15px;
     overflow: auto;
     box-shadow: 0 10px 10px black;
-
 }
-
+@media (max-width:768px){
+    .product-display{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .image-item img{
+        width: 150px;
+        height: 150px;
+    }
+    .image-container{
+        width: 150px;
+    }
+    .image .img-text{
+        font-size: 2px;
+    }
+    .image p{
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+    }
+    .image:hover p{
+        opacity: 0;
+    }
+    .image .p2 {
+        position: absolute;
+        bottom: 0;
+    }
+    .image:hover .p2 p{
+        opacity: 1;
+    } 
+    .p2 p{
+        font-size: 14px;
+    }
+}
 
 .grid-num{
     position: absolute;
