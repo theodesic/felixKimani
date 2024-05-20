@@ -598,6 +598,28 @@ hr{
     box-shadow: 0 10px 10px black;
 }
 @media (max-width:768px){
+    .overlay-links{
+        padding: 2%;
+        margin-bottom: 2%;
+        position: absolute;
+        top: 25%;
+    }
+    .overlay h3{
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+    }
+    .overlay a{
+        font-size: 14;
+        padding-bottom:4% ;
+        display: flex;
+
+    }
+    .overlay p{
+        font-size: 17px;
+        position: absolute;
+        top: 2px;
+    }
     .product-display{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1012,10 +1034,10 @@ hr{
 .navholder{
     padding-right: 30%;
     position: sticky;
+    background: whitesmoke;
     top: 0;
     overflow-x: hidden;
     z-index: 3;
-    background: whitesmoke;
     transition: background-color 0.4s ease-in-out;
 }
 
@@ -1023,6 +1045,7 @@ hr{
     margin: auto;
     position: absolute;
     left: 50px;
+    top: 20%;
 }
 
 .navbar-toggler{

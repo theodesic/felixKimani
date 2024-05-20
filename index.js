@@ -134,3 +134,6 @@ form.addEventListener("mouseout", function(event){
 })
 
 
+
+navholder = document.getElementById("navholder") ;
+window.onscroll 
