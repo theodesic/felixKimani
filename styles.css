@@ -598,6 +598,7 @@ hr{
     box-shadow: 0 10px 10px black;
 }
 @media (max-width:768px){
+    
     .overlay-links{
         padding: 2%;
         margin-bottom: 2%;
@@ -605,18 +606,18 @@ hr{
         top: 25%;
     }
     .overlay h3{
-        font-size: 16px;
+        display: none;
         position: absolute;
         bottom: 0;
     }
     .overlay a{
-        font-size: 14;
+        font-size: 12;
         padding-bottom:4% ;
         display: flex;
 
     }
     .overlay p{
-        font-size: 17px;
+        font-size: 19px;
         position: absolute;
         top: 2px;
     }
@@ -1054,6 +1055,9 @@ hr{
 }
 
 @media (max-width:500px){
+    .overlay h3{
+        display: none;
+    }
     .sidebar{
         margin-right: 0;
     }
