@@ -598,7 +598,9 @@ hr{
     box-shadow: 0 10px 10px black;
 }
 @media (max-width:768px){
-    
+    .product-display .image-container .image-item .image .img-text{
+        font-size: 19px;
+    }
     .overlay-links{
         padding: 2%;
         margin-bottom: 2%;
@@ -1055,6 +1057,10 @@ hr{
 }
 
 @media (max-width:500px){
+    .product-display{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .overlay h3{
         display: none;
     }
@@ -1088,6 +1094,12 @@ hr{
     .gallery-item .p2 p{
         border-radius: 20%;
         font-size: 15px;
+    }
+    .product-display .image-container {
+        margin-left: 30%;
+    }
+    .product-display .image-container .image-item .image .img-text{
+        font-size: 17px;
     }
 }
 
