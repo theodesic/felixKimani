@@ -390,6 +390,8 @@ nav ul li:hover ul.dropdown{
   } 
 
   .box img{
+    border-radius: 10px;
+
     width: 100%;
     border: 10px;
     display: block;
